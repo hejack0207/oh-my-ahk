@@ -57,7 +57,7 @@ return                                                               ;|
 ;----------------------------------o----------------------------------o
 ;                        CapsLock  |  {ESC}                          ;|
 ;----------------------------------o----------------------------------o
-CapsLock::Send, {ESC}                                                ;|
+; CapsLock::Send, {ESC}                                                ;|
 ;---------------------------------------------------------------------o
 
 
@@ -264,10 +264,14 @@ return                                                               ;|
 ;                     CapsLock + ,  |  BackSpace                     ;|
 ;                     CapsLock + .  |  Ctrl + BackSpace              ;|
 ;-----------------------------------o---------------------------------o
-CapsLock & ,:: Send, {Del}                                           ;|
-CapsLock & .:: Send, ^{Del}                                          ;|
-CapsLock & m:: Send, {BS}                                            ;|
-CapsLock & n:: Send, ^{BS}                                           ;|
+; CapsLock & ,:: Send, {Del}                                           ;|
+; CapsLock & .:: Send, ^{Del}                                          ;|
+; CapsLock & m:: Send, {BS}                                            ;|
+; CapsLock & n:: Send, ^{BS}                                           ;|
+CapsLock & ,:: MouseMove, 0, -10, 0, R                                ;|
+CapsLock & .:: MouseMove, 0, 10, 0, R                                 ;|
+CapsLock & m:: MouseMove, -10, 0, 0, R                                ;|
+CapsLock & /:: MouseMove, 10, 0, 0, R                                 ;|
 ;---------------------------------------------------------------------o
 
 
