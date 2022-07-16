@@ -2,15 +2,16 @@
 
 #SingleInstance force
 
-RunAsAdmin(Fullpath, AsAdmin){
-    if FileExist(Fullpath) {
+RunAsAdmin(FullPath, AsAdmin){
+    ExePath := StrSplit(FullPath," ")[1]
+    if FileExist(ExePath) {
 	if (AsAdmin) {
-		Run,*RunAs %Fullpath%
+		Run,*RunAs %FullPath%
 	} else {
-		Run, %Fullpath%
+		Run, %FullPath%
 	}
     }else{
-	MsgBox, "Not exists file:" %Fullpath%
+	MsgBox, "Not exists file:" %ExePath%
     }
 }
 
