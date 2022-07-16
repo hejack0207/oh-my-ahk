@@ -1,4 +1,4 @@
-Dir_Program_Files := "C:\Program Files"
+; Dir_Program_Files := "C:\Program Files"
 
 ; communication
 !^w::
