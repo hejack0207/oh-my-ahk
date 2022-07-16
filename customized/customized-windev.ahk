@@ -1,3 +1,5 @@
+Dir_Program_Files := "C:\Program Files"
+
 ; editor
 !^g::
 StartProgram("gvim.exe", Dir_Program_Files ."\Vim\vim82\gvim.exe" ,false)

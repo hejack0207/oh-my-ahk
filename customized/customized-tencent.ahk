@@ -1,3 +1,5 @@
+Dir_Program_Files := "C:\Program Files"
+
 ; communication
 !^w::
 StartProgram("WXWork.exe", Dir_Program_Files . "\WXWork\WXWork.exe",false)
