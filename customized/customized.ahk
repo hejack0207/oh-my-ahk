@@ -1,36 +1,31 @@
+# vim: sts=-1 sw=4 fdm=marker
+
 #SingleInstance force
 
-RunAsAdmin(Fullpath){
-    ;~ RunAs, Administrator, 123qwe!@#
-    ;~ Run, %Fullpath%
-    ;~ RunAs  ; Reset to normal behavior.
-    Run,*RunAs %Fullpath%
+RunAsAdmin(Fullpath, AsAdmin){
+	if (AsAdmin) {
+		Run,*RunAs %Fullpath%
+	} else {
+		Run, %Fullpath%
+	}
 }
 
 StartProgram(ProgramName,ProgramFullPath, AsAdmin){
-    if WinExist("ahk_exe " . ProgramName){
-        WinActivate, ahk_exe %ProgramName%
-    }else{
-        if (AsAdmin) {
-            RunAsAdmin(ProgramFullPath)
-        } else {
-            Run, %ProgramFullPath%
-        }
-    }
-    return
+	if WinExist("ahk_exe " . ProgramName){
+		WinActivate, ahk_exe %ProgramName%
+	}else{
+		RunAsAdmin(ProgramFullPath, AsAdmin)
+	}
+	return
 }
 
 StartWindow(WinClass, ProgramFullPath, AsAdmin){
-    if WinExist("ahk_class " . WinClass){
-        WinActivate, ahk_class %WinClass%
-    }else{
-        if (AsAdmin) {
-            RunAsAdmin(ProgramFullPath)
-        } else {
-            Run, %ProgramFullPath%
-        }
-    }
-    return
+	if WinExist("ahk_class " . WinClass){
+		WinActivate, ahk_class %WinClass%
+	}else{
+		RunAsAdmin(ProgramFullPath, AsAdmin)
+	}
+	return
 }
 
 ; autohotkey
