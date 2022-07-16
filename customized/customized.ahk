@@ -1,8 +1,5 @@
 #SingleInstance force
 
-; #include %A_ScriptDir%\clipjump
-; #include Clipjump.ahk
-
 RunAsAdmin(Fullpath){
     ;~ RunAs, Administrator, 123qwe!@#
     ;~ Run, %Fullpath%
@@ -53,27 +50,6 @@ return
 !^c::
 StartProgram("chrome.exe", Dir_Program_Files . "\Google\Chrome\Application\chrome.exe",false)
 return
-
-/*
-!^b::
-StartProgram("ApplicationFrameHost.exe", Dir_Program_Files . "C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps\MicrosoftEdge.exe",false)
-return
-*/
-
-; explorer
-/*
-!^x::
-StartProgram("Explorer.exe", Dir_Program_Files . "C:\Windows\explorer.exe",false)
-return
-*/
-
-; #!h::
-; SendInput, #{Left}
-; return
-;
-; #!l::
-; SendInput, #{Right}
-; return
 
 #UseHook on
 #!h::SendInput #{Left}
