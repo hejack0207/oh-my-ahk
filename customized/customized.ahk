@@ -10,7 +10,7 @@ RunAsAdmin(Fullpath, AsAdmin){
 		Run, %Fullpath%
 	}
     }else{
-
+	MsgBox, "Not exists file:" . Fullpath
     }
 }
 
