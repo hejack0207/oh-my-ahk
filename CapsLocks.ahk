@@ -385,10 +385,10 @@ CapsLock & ':: Send, =                                               ;|
 CapsLock & [:: Send, ^-                                              ;|
 CapsLock & ]:: Send, {F12}                                           ;|
 ;-----------------------------------o                                ;|
-CapsLock & /::                                                       ;|
-Send, ^e                                                             ;|
-Send, c                                                              ;|
-return                                                               ;|
+; CapsLock & /::                                                       ;|
+; Send, ^e                                                             ;|
+; Send, c                                                              ;|
+; return                                                               ;|
 ;-----------------------------------o                                ;|
 CapsLock & \::                                                       ;|
 Send, ^e                                                             ;|
