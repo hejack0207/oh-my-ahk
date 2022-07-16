@@ -243,9 +243,9 @@ return                                                               ;|
 ;                  CapsLock + Right |  Mouse Right                   ;|
 ;    CapsLock + Enter(Push Release) |  Mouse Left Push(Release)      ;|
 ;-----------------------------------o---------------------------------o
-CapsLock & Up::    MouseMove, 0, -10, 0, R                           ;|
-CapsLock & Down::  MouseMove, 0, 10, 0, R                            ;|
 CapsLock & Left::  MouseMove, -10, 0, 0, R                           ;|
+CapsLock & Down::  MouseMove, 0, 10, 0, R                            ;|
+CapsLock & Up::    MouseMove, 0, -10, 0, R                           ;|
 CapsLock & Right:: MouseMove, 10, 0, 0, R                            ;|
 ;-----------------------------------o                                ;|
 CapsLock & Enter::                                                   ;|
@@ -268,9 +268,9 @@ return                                                               ;|
 ; CapsLock & .:: Send, ^{Del}                                          ;|
 ; CapsLock & m:: Send, {BS}                                            ;|
 ; CapsLock & n:: Send, ^{BS}                                           ;|
-CapsLock & ,:: MouseMove, 0, -10, 0, R                                ;|
-CapsLock & .:: MouseMove, 0, 10, 0, R                                 ;|
 CapsLock & m:: MouseMove, -10, 0, 0, R                                ;|
+CapsLock & ,:: MouseMove, 0, 10, 0, R                                 ;|
+CapsLock & .:: MouseMove, 0, -10, 0, R                                ;|
 CapsLock & /:: MouseMove, 10, 0, 0, R                                 ;|
 ;---------------------------------------------------------------------o
 
