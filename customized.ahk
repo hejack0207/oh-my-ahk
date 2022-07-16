@@ -65,9 +65,6 @@ StartProgram("Explorer.exe","C:\Windows\explorer.exe",false)
 return
 */
 
-#include c:\oh-my-bat\ahk\customized-windev.ahk
-#include c:\oh-my-bat\ahk\customized-tencent.ahk
-
 ; #!h::
 ; SendInput, #{Left}
 ; return

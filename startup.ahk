@@ -2,4 +2,7 @@
 ; #include c:\oh-my-ahk\vim_mouse_2.ahk
 ; #include c:\oh-my-ahk\bug.n\src\Main.ahk
 #include c:\oh-my-ahk\customized.ahk
+#include c:\oh-my-ahk\customized-windev.ahk
+#include c:\oh-my-ahk\customized-tencent.ahk
+
 #include c:\oh-my-ahk\winkey.ahk
