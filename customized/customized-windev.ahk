@@ -1,13 +1,9 @@
 ; editor
 !^g::
-if FileExist( Dir_Program_Files ."\Vim\vim82\gvim.exe")
-    Fullpath_Gvim :=  Dir_Program_Files ."\Vim\vim82\gvim.exe"
-
-StartProgram("gvim.exe",Fullpath_Gvim,false)
+StartProgram("gvim.exe", Dir_Program_Files ."\Vim\vim82\gvim.exe" ,false)
 return
 
 ; shell
-
 !^,::
 EnvSet, MSYSTEM, MSYS2
 StartWindow("msys2","C:\msys64\usr\bin\mintty.exe --class msys2 -i ""C:\msys64\msys2.exe"" -o AppLaunchCmd=""C:\msys64\msys2.exe"" -o AppID=MSYS2.Shell.MSYS.9 -o AppName=""MSYS2 MSYS Shell"" -T MSYS2 --store-taskbar-properties -- /usr/bin/zsh -l",false)

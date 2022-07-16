@@ -3,29 +3,34 @@
 #SingleInstance force
 
 RunAsAdmin(Fullpath, AsAdmin){
+    if FileExist(Fullpath) {
 	if (AsAdmin) {
 		Run,*RunAs %Fullpath%
 	} else {
 		Run, %Fullpath%
 	}
+    }else{
+
+    }
 }
 
+
 StartProgram(ProgramName,ProgramFullPath, AsAdmin){
-	if WinExist("ahk_exe " . ProgramName){
-		WinActivate, ahk_exe %ProgramName%
-	}else{
-		RunAsAdmin(ProgramFullPath, AsAdmin)
-	}
-	return
+    if WinExist("ahk_exe " . ProgramName){
+	    WinActivate, ahk_exe %ProgramName%
+    }else{
+	    RunAsAdmin(ProgramFullPath, AsAdmin)
+    }
+    return
 }
 
 StartWindow(WinClass, ProgramFullPath, AsAdmin){
-	if WinExist("ahk_class " . WinClass){
-		WinActivate, ahk_class %WinClass%
-	}else{
-		RunAsAdmin(ProgramFullPath, AsAdmin)
-	}
-	return
+    if WinExist("ahk_class " . WinClass){
+	    WinActivate, ahk_class %WinClass%
+    }else{
+	    RunAsAdmin(ProgramFullPath, AsAdmin)
+    }
+    return
 }
 
 ; autohotkey
