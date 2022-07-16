@@ -1,1 +1,1 @@
-MsgBox, %A_ScriptDir%\clipjump
+; MsgBox, %A_ScriptDir%\clipjump

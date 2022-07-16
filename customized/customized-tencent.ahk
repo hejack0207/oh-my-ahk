@@ -9,10 +9,6 @@ return
 StartProgram("WeChat.exe", Dir_Program_Files . "\Tencent\WeChat\WeChat.exe",false)
 return
 
-!^i::
-StartProgram("QiDian.exe", Dir_Program_Files . "\Tencent\QiDian\Bin\QiDian.exe",false)
-return
-
 ; vpn
 !^q::
 StartProgram("iOA.exe", Dir_Program_Files . """\iOA\iOA.exe"" -userstart",false)
