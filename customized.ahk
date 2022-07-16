@@ -39,29 +39,31 @@ StartWindow(WinClass, ProgramFullPath, AsAdmin){
 ; autohotkey
 !^r::Reload ; Assign Ctrl-Alt-R as a hotkey to restart the script.
 
+Dir_Program_Files := "C:\Program Files"
+
 !^h::
-StartProgram("hh.exe","C:\Program Files\AutoHotkey\AutoHotkey.exe",false)
+StartProgram("hh.exe", Dir_Program_Files . "\AutoHotkey\AutoHotkey.exe",false)
 return
 
 ; browsers
 !^f::
-StartProgram("firefox.exe","C:\Program Files\Mozilla Firefox\firefox.exe",false)
+StartProgram("firefox.exe", Dir_Program_Files . "\Mozilla Firefox\firefox.exe",false)
 return
 
 !^c::
-StartProgram("chrome.exe","C:\Program Files\Google\Chrome\Application\chrome.exe",false)
+StartProgram("chrome.exe", Dir_Program_Files . "\Google\Chrome\Application\chrome.exe",false)
 return
 
 /*
 !^b::
-StartProgram("ApplicationFrameHost.exe","C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps\MicrosoftEdge.exe",false)
+StartProgram("ApplicationFrameHost.exe", Dir_Program_Files . "C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps\MicrosoftEdge.exe",false)
 return
 */
 
 ; explorer
 /*
 !^x::
-StartProgram("Explorer.exe","C:\Windows\explorer.exe",false)
+StartProgram("Explorer.exe", Dir_Program_Files . "C:\Windows\explorer.exe",false)
 return
 */
 
