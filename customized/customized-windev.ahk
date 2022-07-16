@@ -2,7 +2,7 @@ Dir_Program_Files := "C:\Program Files"
 
 ; editor
 !^g::
-StartProgram("gvim.exe", Dir_Program_Files ."\Vim\vim82\gvim.exe" ,false)
+StartProgram("gvim.exe", Dir_Program_Files . "\Vim\vim82\gvim.exe" ,false)
 return
 
 ; shell
@@ -26,7 +26,7 @@ StartProgram("Everything.exe","C:\Program Files\Everything\Everything.exe",false
 return
 
 !^p::
-StartProgram("eCloud.exe", Dir_Program_Files ."\ecloud\eCloud.exe",false)
+StartProgram("eCloud.exe", Dir_Program_Files . "\ecloud\eCloud.exe",false)
 return
 
 !^x::
