@@ -7,6 +7,7 @@ return
 
 !^v::
 StartProgram("WeChat.exe", Dir_Program_Files . "\Tencent\WeChat\WeChat.exe",false)
+StartProgram("WeChat.exe", Dir_Program32_Files . "\Tencent\WeChat\WeChat.exe",false)
 return
 
 ; vpn

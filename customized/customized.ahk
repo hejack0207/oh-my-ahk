@@ -38,6 +38,7 @@ StartWindow(WinClass, ProgramFullPath, AsAdmin){
 !^r::Reload ; Assign Ctrl-Alt-R as a hotkey to restart the script.
 
 Dir_Program_Files := "C:\Program Files"
+Dir_Program32_Files := "C:\Program Files (x86)"
 
 !^h::
 StartProgram("hh.exe", Dir_Program_Files . "\AutoHotkey\AutoHotkey.exe",false)
