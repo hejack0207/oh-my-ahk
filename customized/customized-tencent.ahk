@@ -2,7 +2,7 @@
 
 ; communication
 !^w::
-StartProgram("WXWork.exe", Dir_Program_Files . "\WXWork\WXWork.exe",false)
+StartProgram("WXWork.exe", """" . Dir_Program32_Files . "\WXWork\WXWork.exe""",false)
 return
 
 !^v::
