@@ -1,10 +1,5 @@
 ; Dir_Program_Files := "C:\Program Files"
 
-; editor
-!^g::
-StartProgram("gvim.exe", Dir_Program_Files . "\Vim\vim82\gvim.exe" ,false)
-return
-
 ; shell
 !^,::
 EnvSet, MSYSTEM, MSYS2
@@ -16,8 +11,9 @@ EnvSet, MSYSTEM, MINGW64
 StartWindow("mingw64","C:\msys64\usr\bin\mintty.exe --class mingw64 --tabbar -i ""C:\msys64\mingw64.exe"" -o AppLaunchCmd=""C:\msys64\mingw64.exe"" -o AppID=MSYS2.Shell.MINGW64.9 -o AppName=""MSYS2 MINGW64 Shell"" -T MINGW64 --store-taskbar-properties -- /usr/bin/zsh -l",false)
 return
 
-!^;::
-StartProgram("cmd.exe","C:\Windows\System32\cmd.exe",false)
+; editor
+!^g::
+StartProgram("gvim.exe", Dir_Program_Files . "\Vim\vim82\gvim.exe" ,false)
 return
 
 ; explorer
@@ -27,10 +23,6 @@ return
 
 !^p::
 StartProgram("eCloud.exe", Dir_Program_Files . "\ecloud\eCloud.exe",false)
-return
-
-!^x::
-StartProgram("Explorer.exe","C:\Windows\explorer.exe",false)
 return
 
 ; documents

@@ -5,4 +5,4 @@
 #include c:\oh-my-ahk\customized\customized.ahk
 #include c:\oh-my-ahk\customized\customized-windev.ahk
 #include c:\oh-my-ahk\customized\customized-tencent.ahk
-#include c:\oh-my-ahk\customized\winkey.ahk
+#include c:\oh-my-ahk\customized\windows.ahk
