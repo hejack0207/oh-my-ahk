@@ -1,5 +1,3 @@
-; Dir_Program_Files := "C:\Program Files"
-
 ; shell
 !^,::
 EnvSet, MSYSTEM, MSYS2
@@ -27,7 +25,7 @@ return
 
 ; explorer
 !^e::
-StartProgram("Everything.exe","C:\Program Files\Everything\Everything.exe",false)
+StartProgram("Everything.exe", Dir_Program_Files . "\Everything\Everything.exe",false)
 return
 
 !^p::
@@ -36,9 +34,9 @@ return
 
 ; documents
 !^d::
-StartProgram("PDFXCview.exe","C:\Program Files\Tracker Software\PDF Viewer\PDFXCview.exe",false)
+StartProgram("PDFXCview.exe", Dir_Program_Files . "\Tracker Software\PDF Viewer\PDFXCview.exe",false)
 return
 
 !^n::
-StartProgram("VNote.exe","C:\Program Files\VNote_win_X64_portable_2.7.2\VNote\VNote.exe",false)
+StartProgram("VNote.exe", Dir_Program_Files . "\VNote_win_X64_portable_2.7.2\VNote\VNote.exe",false)
 return
