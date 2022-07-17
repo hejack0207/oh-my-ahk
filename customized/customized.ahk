@@ -43,19 +43,3 @@ Dir_Program32_Files := "C:\Program Files (x86)"
 !^h::
 StartProgram("hh.exe", Dir_Program_Files . "\AutoHotkey\AutoHotkey.exe",false)
 return
-
-; browsers
-!^f::
-StartProgram("firefox.exe", Dir_Program_Files . "\Mozilla Firefox\firefox.exe",false)
-return
-
-!^c::
-StartProgram("chrome.exe", Dir_Program_Files . "\Google\Chrome\Application\chrome.exe",false)
-return
-
-#UseHook on
-#!h::SendInput #{Left}
-#!j::SendInput #{Down}
-#!k::SendInput #{Up}
-#!l::SendInput #{Right}
-#UseHook off

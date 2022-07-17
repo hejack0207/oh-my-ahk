@@ -9,3 +9,9 @@ return
 StartProgram("Explorer.EXE","C:\Windows\explorer.exe",false)
 return
 
+#UseHook on
+#!h::SendInput #{Left}
+#!j::SendInput #{Down}
+#!k::SendInput #{Up}
+#!l::SendInput #{Right}
+#UseHook off

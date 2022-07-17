@@ -16,6 +16,15 @@ return
 StartProgram("gvim.exe", Dir_Program_Files . "\Vim\vim82\gvim.exe" ,false)
 return
 
+; browsers
+!^f::
+StartProgram("firefox.exe", Dir_Program_Files . "\Mozilla Firefox\firefox.exe",false)
+return
+
+!^c::
+StartProgram("chrome.exe", Dir_Program_Files . "\Google\Chrome\Application\chrome.exe",false)
+return
+
 ; explorer
 !^e::
 StartProgram("Everything.exe","C:\Program Files\Everything\Everything.exe",false)
