@@ -7,7 +7,12 @@ X(Name, Path){
 	T := StrSplit(Path, " ")[1]
 	MsgBox, %T%
 }
-X("name", """" . Dir_Program32_Files . """\WXWork")
+; X("name", """" . Dir_Program32_Files . """\WXWork")
+; MsgBox, % A_ProgramFiles
+EnvGet, Pf, ProgramFiles(x86)
+MsgBox, % Pf
+EnvGet, Pf, ProgramW6432
+MsgBox, % Pf
 ; ListVars
 ; Pause
 ; OutputDebug ABC

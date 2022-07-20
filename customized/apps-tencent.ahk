@@ -3,26 +3,28 @@
 
 ; communication
 !^w::
-StartProgram("WXWork.exe", Dir_Program32_Files . "\WXWork\WXWork.exe", "", false)
+EnvGet PF, ProgramFiles(x86)
+StartProgram("WXWork.exe", PF . "\WXWork\WXWork.exe", "", false)
 return
 
 !^v::
-StartProgram("WeChat.exe", Dir_Program32_Files . "\Tencent\WeChat\WeChat.exe", "", false)
+EnvGet PF, ProgramFiles(x86)
+StartProgram("WeChat.exe", PF . "\Tencent\WeChat\WeChat.exe", "", false)
 return
 
 ; vpn
 !^q::
-StartProgram("iOA.exe", Dir_Program_Files . "\iOA\iOA.exe", "-userstart", false)
+StartProgram("iOA.exe", A_ProgramFiles . "\iOA\iOA.exe", "-userstart", false)
 return
 
 !^t::
-StartProgram("weterm.exe", Dir_Program_Files . "\Tencent\WeTERM.exe", "", false)
+StartProgram("weterm.exe", A_ProgramFiles . "\Tencent\WeTERM.exe", "", false)
 return
 
 !^m::
-StartProgram("wemeetapp.exe", Dir_Program_Files . "\Tencent\WeMeet\wemeetapp.exe", "", false)
+StartProgram("wemeetapp.exe", A_ProgramFiles . "\Tencent\WeMeet\wemeetapp.exe", "", false)
 return
 
 !^s::
-StartProgram("WXDrive.exe", Dir_Program_Files . "\WXDrive\WXDrive.exe", "", false)
+StartProgram("WXDrive.exe", A_ProgramFiles . "\WXDrive\WXDrive.exe", "", false)
 return
