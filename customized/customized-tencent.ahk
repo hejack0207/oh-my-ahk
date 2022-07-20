@@ -14,6 +14,10 @@ return
 StartProgram("iOA.exe", Dir_Program_Files . """\iOA\iOA.exe"" -userstart",false)
 return
 
+!^t::
+StartProgram("weterm.exe", Dir_Program_Files . "\Tencent\WeTERM.exe",false)
+return
+
 !^m::
 StartProgram("wemeetapp.exe", Dir_Program_Files . "\Tencent\WeMeet\wemeetapp.exe",false)
 return
