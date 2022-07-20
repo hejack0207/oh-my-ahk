@@ -8,6 +8,8 @@ RunAsAdmin(FullPath, Params, AsAdmin){
     }else{
 	Cmd := FullPath
     }
+    ListVars
+    Pause
 
     if FileExist(FullPath) {
 	if (AsAdmin) {

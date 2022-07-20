@@ -1,3 +1,6 @@
+; Dir_Program_Files := "C:\Program Files"
+; Dir_Program32_Files := "C:\Program Files (x86)"
+
 ; shell
 !^,::
 EnvSet, MSYSTEM, MSYS2
