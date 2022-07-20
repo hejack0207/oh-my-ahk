@@ -2,34 +2,39 @@
 
 #SingleInstance force
 
-RunAsAdmin(FullPath, AsAdmin){
-    ExePath := StrSplit(FullPath," ")[1]
-    if FileExist(ExePath) {
+RunAsAdmin(FullPath, Params, AsAdmin){
+    if ( StrLen(Params) > 0 ) {
+	Cmd := FullPath . " " . Params
+    }else{
+	Cmd := FullPath
+    }
+
+    if FileExist(FullPath) {
 	if (AsAdmin) {
-		Run,*RunAs %FullPath%
+		Run,*RunAs %Cmd%
 	} else {
-		Run, %FullPath%
+		Run, %Cmd%
 	}
     }else{
-	MsgBox, "Not exists file:" %ExePath%
+	MsgBox, "Not exists file:" %FullPath%
     }
 }
 
 
-StartProgram(ProgramName,ProgramFullPath, AsAdmin){
+StartProgram(ProgramName,ProgramFullPath, Params, AsAdmin){
     if WinExist("ahk_exe " . ProgramName){
 	    WinActivate, ahk_exe %ProgramName%
     }else{
-	    RunAsAdmin(ProgramFullPath, AsAdmin)
+	    RunAsAdmin(ProgramFullPath, Params, AsAdmin)
     }
     return
 }
 
-StartWindow(WinClass, ProgramFullPath, AsAdmin){
+StartWindow(WinClass, ProgramFullPath, Params, AsAdmin){
     if WinExist("ahk_class " . WinClass){
 	    WinActivate, ahk_class %WinClass%
     }else{
-	    RunAsAdmin(ProgramFullPath, AsAdmin)
+	    RunAsAdmin(ProgramFullPath, Params, AsAdmin)
     }
     return
 }
@@ -41,5 +46,5 @@ Dir_Program_Files := "C:\Program Files"
 Dir_Program32_Files := "C:\Program Files (x86)"
 
 !^h::
-StartProgram("hh.exe", Dir_Program_Files . "\AutoHotkey\AutoHotkey.exe",false)
+StartProgram("hh.exe", Dir_Program_Files . "\AutoHotkey\AutoHotkey.exe", "", false)
 return

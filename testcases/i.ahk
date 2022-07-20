@@ -1,1 +1,1 @@
-MsgBox, % Dir_Program_Files
+; MsgBox, % Dir_Program_Files
