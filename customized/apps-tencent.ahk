@@ -18,7 +18,7 @@ StartProgram("iOA.exe", A_ProgramFiles . "\iOA\iOA.exe", "-userstart", false)
 return
 
 !^t::
-StartProgram("weterm.exe", A_ProgramFiles . "\Tencent\WeTERM.exe", "", false)
+StartProgram("weterm.exe", A_ProgramFiles . "\Tencent\WeTERM\WeTERM.exe", "", false)
 return
 
 !^m::
