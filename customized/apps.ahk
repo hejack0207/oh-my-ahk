@@ -9,7 +9,8 @@ return
 
 !^.::
 EnvSet, MSYSTEM, MINGW64
-StartWindow("mingw64","C:\msys64\usr\bin\mintty.exe", "--class mingw64 --tabbar -i ""C:\msys64\mingw64.exe"" -o AppLaunchCmd=""C:\msys64\mingw64.exe"" -o AppID=MSYS2.Shell.MINGW64.9 -o AppName=""MSYS2 MINGW64 Shell"" -T MINGW64 --store-taskbar-properties -- /usr/bin/zsh -l",false)
+; Options := "--tabbar "
+StartWindow("mingw64","C:\msys64\usr\bin\mintty.exe", Options . "--class mingw64 -i ""C:\msys64\mingw64.exe"" -o AppLaunchCmd=""C:\msys64\mingw64.exe"" -o AppID=MSYS2.Shell.MINGW64.9 -o AppName=""MSYS2 MINGW64 Shell"" -T MINGW64 --store-taskbar-properties -- /usr/bin/zsh -l",false)
 return
 
 ; editor
