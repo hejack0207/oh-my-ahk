@@ -5,6 +5,10 @@
 StartProgram("cmd.exe","C:\Windows\system32\cmd.exe", "", false)
 return
 
+!^/::
+StartProgram("powershell.exe","C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe", "", false)
+return
+
 !^x::
 StartProgram("Explorer.EXE","C:\Windows\explorer.exe", "", false)
 return
