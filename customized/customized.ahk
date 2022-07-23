@@ -25,6 +25,7 @@ RunAsAdmin(FullPath, Params, AsAdmin){
 
 StartProgram(ProgramName,ProgramFullPath, Params, AsAdmin){
     if WinExist("ahk_exe " . ProgramName){
+	    WinShow, ahk_exe %ProgramName%
 	    WinActivate, ahk_exe %ProgramName%
     }else{
 	    RunAsAdmin(ProgramFullPath, Params, AsAdmin)
