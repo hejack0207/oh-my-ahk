@@ -29,7 +29,7 @@ return
 
 ; explorer
 !^e::
-StartProgram("Everything.exe", "C:\Users\he\scoop\shims\everything.exe", "", false)
+StartProgram("Everything.exe", A_Programs . "\Scoop Apps\Everything.lnk", "", false)
 return
 
 !^p::
