@@ -29,7 +29,7 @@ return
 
 ; explorer
 !^e::
-StartProgram("Everything.exe", Dir_Program_Files . "\Everything\Everything.exe", "", false)
+StartProgram("Everything.exe", "C:\Users\he\scoop\shims\everything.exe", "", false)
 return
 
 !^p::
