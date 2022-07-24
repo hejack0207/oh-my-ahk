@@ -13,6 +13,11 @@ EnvSet, MSYSTEM, MINGW64
 StartWindow("mingw64","C:\msys64\usr\bin\mintty.exe", Options . "--class mingw64 -i ""C:\msys64\mingw64.exe"" -o AppLaunchCmd=""C:\msys64\mingw64.exe"" -o AppID=MSYS2.Shell.MINGW64.9 -o AppName=""MSYS2 MINGW64 Shell"" -T MINGW64 --store-taskbar-properties -- /usr/bin/zsh -l",false)
 return
 
+; wm
+!^x::
+StartProgram("win-vind.exe", A_Startup . "\win-vind.lnk", "" ,false)
+return
+
 ; editor
 !^g::
 StartProgram("gvim.exe", Dir_Program_Files . "\Vim\vim82\gvim.exe", "" ,false)
