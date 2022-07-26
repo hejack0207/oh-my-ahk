@@ -9,17 +9,13 @@ return
 
 !^.::
 EnvSet, MSYSTEM, MINGW64
-<<<<<<< HEAD
-StartWindow("mingw64","C:\msys64\usr\bin\mintty.exe", "--class mingw64 -i ""C:\msys64\mingw64.exe"" -o AppLaunchCmd=""C:\msys64\mingw64.exe"" -o AppID=MSYS2.Shell.MINGW64.9 -o AppName=""MSYS2 MINGW64 Shell"" -T MSCMD --store-taskbar-properties -- /usr/bin/zsh -l",false)
-=======
 ; Options := "--tabbar "
-StartWindow("mingw64","C:\msys64\usr\bin\mintty.exe", Options . "--class mingw64 -i ""C:\msys64\mingw64.exe"" -o AppLaunchCmd=""C:\msys64\mingw64.exe"" -o AppID=MSYS2.Shell.MINGW64.9 -o AppName=""MSYS2 MINGW64 Shell"" -T MINGW64 --store-taskbar-properties -- /usr/bin/zsh -l",false)
+StartWindow("mingw64","C:\msys64\usr\bin\mintty.exe", Options . "--class mingw64 -i ""C:\msys64\mingw64.exe"" -o AppLaunchCmd=""C:\msys64\mingw64.exe"" -o AppID=MSYS2.Shell.MINGW64.9 -o AppName=""MSYS2 MINGW64 Shell"" -T MSCMD --store-taskbar-properties -- /usr/bin/zsh -l",false)
 return
 
 ; wm
 !^x::
 StartProgram("win-vind.exe", A_Startup . "\win-vind.lnk", "" ,false)
->>>>>>> aaa9def6353208fde7e761aad4b600f1d2f7df02
 return
 
 ; editor
