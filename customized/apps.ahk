@@ -4,12 +4,12 @@
 ; shell
 !^,::
 EnvSet, MSYSTEM, MSYS2
-StartWindow("msys2","C:\msys64\usr\bin\mintty.exe", "--class msys2 -i ""C:\msys64\msys2.exe"" -o AppLaunchCmd=""C:\msys64\msys2.exe"" -o AppID=MSYS2.Shell.MSYS.9 -o AppName=""MSYS2 MSYS Shell"" -T MSYS2 --store-taskbar-properties -- /usr/bin/zsh -l", false)
+StartWindow("msys2","C:\msys64\usr\bin\mintty.exe", "--class msys2 -i ""C:\msys64\msys2.exe"" -o AppLaunchCmd=""C:\msys64\msys2.exe"" -o AppID=MSYS2.Shell.MSYS.9 -o AppName=""MSYS2 MSYS Shell"" -T MSCMD --store-taskbar-properties -- /usr/bin/zsh -l", false)
 return
 
 !^.::
 EnvSet, MSYSTEM, MINGW64
-StartWindow("mingw64","C:\msys64\usr\bin\mintty.exe", "--class mingw64 --tabbar -i ""C:\msys64\mingw64.exe"" -o AppLaunchCmd=""C:\msys64\mingw64.exe"" -o AppID=MSYS2.Shell.MINGW64.9 -o AppName=""MSYS2 MINGW64 Shell"" -T MINGW64 --store-taskbar-properties -- /usr/bin/zsh -l",false)
+StartWindow("mingw64","C:\msys64\usr\bin\mintty.exe", "--class mingw64 -i ""C:\msys64\mingw64.exe"" -o AppLaunchCmd=""C:\msys64\mingw64.exe"" -o AppID=MSYS2.Shell.MINGW64.9 -o AppName=""MSYS2 MINGW64 Shell"" -T MSCMD --store-taskbar-properties -- /usr/bin/zsh -l",false)
 return
 
 ; editor
